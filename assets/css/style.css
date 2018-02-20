@@ -1,10 +1,33 @@
 body {
-    background: saddlebrown;
+    background-image: url(../../assets/images/pexels-photo-753416.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.gems {
+    height: 75%;
+    width: 75%;
+
 }
 btn {
-    text-align: center;
+    
 }
 
 .panel {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: white;
+}
+
+
+
+footer {
+    color: white;
     text-align: center;
 }
