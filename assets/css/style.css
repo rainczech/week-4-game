@@ -4,26 +4,35 @@ body {
     background-repeat: no-repeat;
 }
 
-.gems {
+.gem-pic {
     height: 75%;
     width: 75%;
 
 }
-btn {
-    
+p {
+    font-family: 'News Cycle', sans-serif;
 }
-
 .panel {
     text-align: center;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.panel-heading {
+    font-family: 'Domine', serif;
 }
 
 ul {
     list-style-type: none;
+    font-family: 'News Cycle', sans-serif;
 }
 
 h1 {
     color: white;
+    font-family: 'Domine', serif;
 }
+ h2 {
+     font-family: 'Domine', serif;
+ }
 
 
 
@@ -31,3 +40,5 @@ footer {
     color: white;
     text-align: center;
 }
+/* font-family: 'Domine', serif;
+font-family: 'Open Sans Condensed', sans-serif; */

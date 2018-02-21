@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Domine|News+Cycle|Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-  crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -31,16 +31,20 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <button type="button" class="btn btn-default center-block"><img class="gems" src="assets/images/almandine-garnet-gem-228691a.jpg"></button>
+                <button type="button" class="btn btn-default center-block gems"><img 
+                    class="gem-pic" src="assets/images/almandine-garnet-gem-228691a.jpg"></button>
             </div>
             <div class="col-sm-2">
-                <button type="button" class="btn btn-default center-block"><img class="gems" src="assets/images/amethyst-gem-268230a.jpg"></button>
+                <button type="button" class="btn btn-default center-block gems"><img 
+                    class="gem-pic" src="assets/images/amethyst-gem-268230a.jpg"></button>
             </div>
             <div class="col-sm-2">
-                <button type="button" class="btn btn-default center-block"><img class="gems" src="assets/images/ametrine-gem-244322a.jpg"></button>
+                <button type="button" class="btn btn-default center-block gems"><img 
+                    class="gem-pic" src="assets/images/ametrine-gem-244322a.jpg"></button>
             </div>
             <div class="col-sm-2">
-                <button type="button" class="btn btn-default center-block"><img class="gems" src="assets/images/demantoid-garnet-gem-237789a.jpg"></button>
+                <button type="button" class="btn btn-default center-block gems"><img 
+                    class="gem-pic" src="assets/images/demantoid-garnet-gem-237789a.jpg"></button>
             </div>
         
             <div class="col-sm-4">
@@ -61,14 +65,14 @@
            <div class="col-sm-4">
                <div class="panel panel-default">
                    <div class="panel-body">
-                       goal score
+                       <h3 id="goalScore">hi</h3>
                    </div>
                </div>
            </div>
            <div class="col-sm-4">
                <div class="panel panel-default">
                    <div class="panel-body">
-                       user score
+                       <h3 id="userScore">bye</h3>
                    </div>
                </div>
            </div>
@@ -77,5 +81,8 @@
 
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    
 </body>
 </html>
