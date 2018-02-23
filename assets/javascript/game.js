@@ -35,9 +35,11 @@ var gem4 = {
     points: Math.floor(Math.random()*11+1),
 };
 
+// userScore = function sum(){
 $("#gem1").on("click", function () {
     console.log(gem1.points);
     userScore += gem1.points;
+    console.log(userScore);
 });
 
 $("#gem2").on("click", function () {
@@ -48,15 +50,19 @@ $("#gem2").on("click", function () {
 
 $("#gem3").on("click", function () {
     console.log(gem3.points);
+    userScore += gem3.points;
+    console.log (userScore);
 });
 
 $("#gem4").on("click", function () {
     console.log(gem4.points);
+    userScore += gem4.points;
+    console.log (userScore);
 });
 
-// summation of clicks
+$("#userScore").text("Current amount is: " + userScore);
 
-$("#userScore").html("Your current amount is: " + userScore);
+// };
 
 
 // compare user amount to goal number
@@ -81,7 +87,7 @@ $("#userScore").html("Your current amount is: " + userScore);
 
 
     var goalScore= Math.floor(Math.random()*101+19);
-    $("#goalScore").html("Your number goal is: " + goalScore);
+    $("#goalScore").html("Your goal is: " + goalScore);
     console.log(goalScore);
 
 
