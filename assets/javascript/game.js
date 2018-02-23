@@ -2,6 +2,7 @@
 // =====
 var wins = "";
 var losses = "";
+var userScore = 0;
 // =====
 // functions
 // =====
@@ -36,10 +37,13 @@ var gem4 = {
 
 $("#gem1").on("click", function () {
     console.log(gem1.points);
+    userScore += gem1.points;
 });
 
 $("#gem2").on("click", function () {
     console.log(gem2.points);
+    userScore += gem2.points;
+    console.log(userScore);
 });
 
 $("#gem3").on("click", function () {
@@ -50,11 +54,26 @@ $("#gem4").on("click", function () {
     console.log(gem4.points);
 });
 
-// produce random goal number between 19-120
+// summation of clicks
+
+$("#userScore").html("Your current amount is: " + userScore);
+
+
+// compare user amount to goal number
+
+
+// determine win or loss
+
+
+// keep track of wins
 
 
 
+// keep track of losses
 
+
+
+// restart game w/out resetting wins and losses
 
 
 // main
