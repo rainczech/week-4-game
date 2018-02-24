@@ -3,33 +3,40 @@
 var wins = 0;
 var losses = 0;
 var userScore = 0;
+var gem1;
+var gem2;
+var gem3;
+var gem4;
+var goalScore;
 // =====
 // functions
 // =====
 
-$(document).ready; 
+
+$(document).ready(function(){
 
 function startGame(){
-var goalScore= Math.floor(Math.random()*101+19);
+$("#userScore").html("Current amount is: " + userScore);    
+userScore = 0;  
+goalScore= Math.floor(Math.random()*101+19);
 $("#goalScore").html("Your goal is: " + goalScore);
 console.log(goalScore);
 
-var gem1 = {
+gem1 = {
     points: Math.floor(Math.random()*11+1),
 };
 
-var gem2 = {
+gem2 = {
     points: Math.floor(Math.random()*11+1),
 };
 
-var gem3 = {
+gem3 = {
     points: Math.floor(Math.random()*11+1),
 };
 
-var gem4 = {
+gem4 = {
     points: Math.floor(Math.random()*11+1),
-};
-};
+}};
 
 $("#gem1").on("click", function () {
     console.log(gem1.points);
@@ -55,7 +62,7 @@ $("#gem3").on("click", function () {
 });
 
 $("#gem4").on("click", function () {
-    console.log(gem4.points);
+    console.log(gem4.points); 
     userScore += gem4.points;
     updateScore();
     winLoseTest();
@@ -63,7 +70,7 @@ $("#gem4").on("click", function () {
 
 var userScoreDiv = $("#userScore");
     function updateScore(){
-        userScoreDiv.html("Current amount is:" + userScore);
+        userScoreDiv.html("Current amount is: " + userScore);
     }
 
 
@@ -76,20 +83,23 @@ if (userScore > goalScore) {
     console.log("loser!");
     losses++;
     $("#losses").html(losses);
+    alert("You lose! Try Again!");
     startGame ();
 
 } else if (userScore === goalScore) {
     console.log("you win");
     wins++;
     $("#wins").html(wins);
+    alert("Woo Hoo! You Win!");
     startGame (); 
 }};
 
 // determine win or loss
 
+startGame();
 
+});
 // keep track of wins
-
 
 
 // keep track of losses
