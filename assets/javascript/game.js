@@ -17,6 +17,7 @@ $(document).ready(function(){
 
 function startGame(){
 userScoreDiv.html("Current amount is: 0");
+userScore = 0;
 goalScore= Math.floor(Math.random()*101+19);
 $("#goalScore").html("Your goal is: " + goalScore);
 console.log(goalScore);
@@ -83,14 +84,13 @@ if (userScore > goalScore) {
     losses++;
     $("#losses").html(losses);
     startGame();
-    alert("You lose! Try Again!");
-
+    alert("Try Again!"); 
 } else if (userScore === goalScore) {
     console.log("you win");
     wins++;
     $("#wins").html(wins);
     startGame ();
-    alert("Woo Hoo! You Win!");
+    alert("Winner Winner!");
 }};
 
 // determine win or loss
